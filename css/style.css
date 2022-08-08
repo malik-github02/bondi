@@ -1,0 +1,148 @@
+:root {
+       --dark-color: #19283f;
+       --green-color: #33d1cc;
+       --red-color: #ff3150;
+       --yellow-color: #ffc400;
+       --section-color: #eff7fa;
+}
+body {
+       font-family: 'Roboto', sans-serif;
+}
+.main-btn {
+       background-color: var(--red-color);
+       color: var(--yellow-color);
+}
+.main-btn:hover {
+       color: var(--yellow-color);
+}
+
+.main-title::after {
+       content: '';
+       position: absolute;
+       bottom: -20px;
+       left: 50%;
+       transform: translateX(-50%);
+       width: 120px;
+       height: 2px;
+       background-color: var(--green-color);
+}
+.main-title svg {
+       color: var(--yellow-color);
+}
+/* Start Navbar */
+.navbar {
+       background-color: var(--dark-color);
+}
+.navbar .nav-link {
+       color: white;
+}
+.navbar .navbar-brand {
+       color: var(--green-color);
+}
+.navbar .navbar-toggler {
+       box-shadow: none;
+       border: 1px solid white;
+       color: white;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:focus,
+.navbar .nav-link:hover {
+       color: var(--green-color);
+}
+.search {
+       border-left: 1px solid white;
+}
+.search svg {
+       color: var(--green-color);
+}
+.navbar .all-navs {
+       display: flex;
+       gap: 15px;
+}
+/* End Navbar */
+
+/* Start Landing */
+.landing {
+       background-color: var(--dark-color);
+       min-height: calc(100vh - 56px);
+}
+/* End Landing */
+/* Start Features */
+.features .icon-holder {
+       height: 200px;
+}
+.features .icon-holder svg {
+       left: 50%;
+       transform: translateX(-50%);
+}
+.features .icon-holder .number {
+       font-size: 12rem;
+       color: var(--section-color);
+}
+.features .icon-holder .draw {
+       color: var(--green-color);
+}
+.features h4 {
+       color: var(--yellow-color);
+}
+/* End Features */
+/* Start Our-Work */
+.our-work {
+       background-color: var(--section-color);
+}
+.our-work ul li {
+       padding: 0.5rem 1rem;
+       cursor: pointer;
+}
+.our-work ul li.active {
+       background-color: var(--red-color);
+       color: var(--yellow-color);
+}
+/* End Our-Work */
+/* Start Stuff */
+.stuff .description p {
+       max-width: 500px;
+}
+/* End Stuff */
+/* Start Team */
+.team {
+       background-color: var(--section-color);
+}
+.team .head h2 {
+       color: var(--yellow-color);
+}
+.team .box h4 {
+       background-color: var(--green-color);
+}
+/* End Team */
+/* Start Project */
+.project {
+       background-color: var(--dark-color);
+}
+/* End Project */
+/* Start Subscribe */
+.subscribe {
+       background-color: var(--yellow-color);
+}
+.subscribe input[type='text'] {
+       border: none;
+       outline: none;
+       border-bottom: 1px solid white;
+}
+.subscribe ::placeholder {
+       color: white;
+}
+.subscribe input {
+       caret-color: white;
+}
+.subscribe input[type='submit'] {
+       background-color: var(--dark-color);
+       color: var(--yellow-color);
+}
+/* End Subscribe */
+/* Start Footer */
+.footer {
+       background-color: var(--dark-color);
+}
+/* End Footer */
